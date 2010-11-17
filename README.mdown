@@ -23,6 +23,9 @@ _ web.py installed
 4. Make sure realfiles is writeable/readable by the server
 5. Enjoy?
 
+###License
+
+Use it!  Attribute me!  Make it better!  Give back!
 
 ###Caveats
 
