@@ -1,0 +1,27 @@
+Options +ExecCGI
+AddHandler cgi-script .py
+DirectoryIndex code.py
+AddType application/octet-stream .jpeg
+AddType application/octet-stream .xls
+AddType application/octet-stream .doc
+AddType application/octet-stream .avi
+AddType application/octet-stream .mpg
+AddType application/octet-stream .mov
+AddType application/octet-stream .pdf
+AddType application/octet-stream .jpg
+AddType application/octet-stream .tif
+AddType application/octet-stream .png
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  #RewriteBase /drops/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/static
+  RewriteCond %{REQUEST_URI} !^/realfiles
+  RewriteCond %{REQUEST_URI} !^/files
+  RewriteCond %{REQUEST_URI} !^/icons
+  RewriteCond %{REQUEST_URI} !^/favicon.ico$
+  RewriteCond %{REQUEST_URI} !^(/.*)+code.py/
+  RewriteRule ^(.*)$ code.py/$1 [L]
+</IfModule>

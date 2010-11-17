@@ -1,0 +1,29 @@
+#pyDrop
+##a web.py based drop.io replacement
+by Dan Steingart
+
+###Welcome
+
+Thanks for checking out pyDrop, my drop.io replacement.  Drop.io was super.  Then they sold out to Facebook, and it's no more.  Perhaps facebook will integrate some features, but I'd rather not have my reallyimportantdata next to your child's drunken, debaucherous chronicles.  
+
+So I used [Aaron Swartz's](http://www.aaronsw.com/) fantastic [web.py](http://webpy.org) to create a folder based drop site.  It uses the nifty ajax-upload javascript so generously provided by [valums](http://valums.com/ajax-upload/) and the ever popular [jquery]() for some other voodoo.  
+
+###Requirements
+To get the show started you'll need:
+
+- A server with apache
+- Mod_Rewrite
+_ web.py installed
+
+###Usage
+
+1. Download the code, 
+2. copy to a web-accessiable directory
+3. Modify the settings.py file to match your server-side-stuff
+4. Make sure realfiles is writeable/readable by the server
+5. Enjoy?
+
+
+###Caveats
+
+There are probably countless security holes here.  The code does the best it can to prevent overwrites, but shit happens.  To minimize said shit from happening, a user can add, but cannot delete.  There are no passwords as yet: the easiest way to authenticate right now is to implement some directory based voodoo via the .htaccess/.htpasswd method.
