@@ -29,4 +29,4 @@ Use it!  Attribute me!  Make it better!  Give back!
 
 ###Caveats
 
-There are probably countless security holes here.  The code does the best it can to prevent overwrites, but shit happens.  To minimize said shit from happening, a user can add, but cannot delete.  There are no passwords as yet: the easiest way to authenticate right now is to implement some directory based voodoo via the .htaccess/.htpasswd method.
+There are probably countless security holes here.  The code does the best it can to prevent overwrites, but stuff happens.  To minimize said stuff from happening, a user can add, but cannot delete.  There are no passwords as yet: the easiest way to authenticate right now is to implement some directory based voodoo via the .htaccess/.htpasswd method.
