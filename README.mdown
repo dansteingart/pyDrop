@@ -6,14 +6,18 @@ by Dan Steingart
 
 Thanks for checking out pyDrop, my drop.io replacement.  Drop.io was super.  Then they sold out to Facebook, and it's no more.  Perhaps facebook will integrate some features, but I'd rather not have my reallyimportantdata next to your child's drunken, debaucherous chronicles.  
 
-So I used [Aaron Swartz's](http://www.aaronsw.com/) fantastic [web.py](http://webpy.org) to create a folder based drop site.  It uses the nifty ajax-upload javascript so generously provided by [valums](http://valums.com/ajax-upload/) and the ever popular [jquery]() for some other voodoo.  
+So I used the late [Aaron Swartz's](http://www.aaronsw.com/) fantastic [web.py](http://webpy.org) to create a folder based drop site.  It uses the nifty ajax-upload javascript so generously provided by [valums](http://valums.com/ajax-upload/) and the ever popular [jquery]() for some other voodoo.  
 
 ###Requirements
 To get the show started you'll need:
 
-- A server with apache
-- Mod_Rewrite
-_ web.py installed
+- just python and web.py 
+
+Like all things web.py, you can run in by typing 
+
+    python code.py <port number> 
+
+You can also use apache and mod_rewrite, ngnix, whatever.  
 
 ###Usage
 
